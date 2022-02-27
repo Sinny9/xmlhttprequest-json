@@ -7,8 +7,8 @@
         xmlhtpp.send()
         xmlhtpp.onload = function () {
             data = JSON.parse(xmlhtpp.responseText);
-            document.getElementById('lat').innerHTML = data.latitude
-            document.getElementById('lon').innerHTML = data.longitude     
+            document.getElementById('lat').innerHTML = 'Latitudine '+ data.latitude
+            document.getElementById('lon').innerHTML = 'Longitudine '+ data.longitude     
             console.log('Dati',data)
         }
         
